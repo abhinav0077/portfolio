@@ -40,12 +40,68 @@ nav {
     color: #333;
     font-weight: 500;
     padding-bottom: 3px;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
     color: #007bff;
     border-bottom: 2px solid #007bff;
+}
+
+/* Menu toggle hamburger style */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive navigation - mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        height: calc(100vh - 60px);
+        width: 200px;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        flex-direction: column;
+        padding-top: 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        margin-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+    }
 }
 
 .hero {
