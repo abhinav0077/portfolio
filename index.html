@@ -1,147 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhinav Verma — Data Analyst</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="#home" class="logo">Abhinav Verma</span></a>
-      </div>
 
-      <button id="nav-toggle" class="nav-toggle" aria-label="toggle nav">
-        <span></span><span></span><span></span>
-      </button>
+<div id="particles-js"></div>
 
-      <nav class="site-nav" id="site-nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a class="cta" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">View Project</a>
-      </nav>
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="logo">Abhinav Verma</span>
     </div>
-  </header>
+    <nav class="site-nav" id="site-nav">
+      <a href="#home" class="nav-btn">Home</a>
+      <a href="#about" class="nav-btn">About Me</a>
+      <a href="#process" class="nav-btn">My Process</a>
+      <a href="#skills" class="nav-btn">Technical Skills</a>
+      <a href="#projects" class="nav-btn">Projects</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1>Hi, i am Abhinav Verma </h1>
-          <h2>Data Analyst — I turn messy data into clear insights</h2>
-          <p class="lead">
-          <p class="lead">
-          I’m continuously learning and building new projects to grow as a data professional, and I’m actively seeking opportunities where I can apply my analytical mindset, strong problem-solving ability, and passion for data to create real impact.
-          </p>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1 class="hero-title">I Am <span class="name-highlight">Abhinav Verma</span></h1>
+    <h2 class="hero-subtitle">Data Analyst — I turn messy data into clear insights</h2>
+    <p class="lead">Continuously learning and building projects to grow as a data professional, actively seeking opportunities to apply analytical mindset and problem-solving skills.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="#projects">See Projects</a>
+      <a class="btn" href="https://github.com/abhinav0077" target="_blank">My GitHub</a>
+    </div>
+  </div>
+</section>
 
-          </p>
-          <div class="hero-ctas">
-            <a class="btn" href="#projects">See Projects</a>
-            <a class="btn btn-outline" href="https://github.com/abhinav0077" target="_blank">My GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ABOUT ME -->
+<section id="about" class="section">
+  <div class="container about-two-col">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I graduated in 2021 (B.Tech, CSE) and have focused on building practical data skills. I know Python, SQL, and data visualization tools and create projects to demonstrate my abilities.</p>
+    </div>
+    <div class="about-skills">
+      <ul class="skills-list">
+        <li>Python (pandas, numpy)</li>
+        <li>Data Cleaning & EDA</li>
+        <li>Visualization (Matplotlib, Seaborn)</li>
+        <li>SQL & Jupyter Notebooks</li>
+        <li>Git & GitHub Version Control</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Some of my Selected works that demonstrates practical data analysis skills.</p>
+<!-- PROCESS -->
+<section id="process" class="section">
+  <div class="container">
+    <h2>My Process</h2>
+    <div class="process-flow">
+      <div class="process-line"></div>
+      <div class="process-box"><span class="icon">🔍</span><h3>Discover</h3><p>Understanding business goals and data needs.</p></div>
+      <div class="process-box"><span class="icon">📊</span><h3>Analyze</h3><p>Applying analytics to uncover insights.</p></div>
+      <div class="process-box"><span class="icon">📈</span><h3>Deliver</h3><p>Providing actionable insights & dashboards.</p></div>
+    </div>
+  </div>
+</section>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Global Air Quality Analysis</h3>
-            <p>Hourly air-quality dataset (50 cities). Data cleaning, EDA, PM2.5 & AQI trends, correlation heatmap, and visual insights.</p>
-            <p class="meta">Python • Pandas • Seaborn • Matplotlib • Jupyter • Git</p>
-            <div class="card-actions">
-              <a class="btn small" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">View on GitHub</a>
-              <a class="btn small btn-outline" href="#contact">Discuss</a>
-            </div>
-          </article>
+<!-- TECHNICAL SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><span class="icon">🐍</span><h3>Python</h3><p>Pandas, NumPy, Matplotlib, Seaborn</p></div>
+      <div class="skill-box"><span class="icon">📊</span><h3>Power BI</h3><p>Interactive dashboards & BI solutions</p></div>
+      <div class="skill-box"><span class="icon">📈</span><h3>Tableau</h3><p>Data visualization & storytelling</p></div>
+      <div class="skill-box"><span class="icon">📊</span><h3>Excel & Google Sheets</h3><p>Advanced formulas & pivot tables</p></div>
+      <div class="skill-box"><span class="icon">💻</span><h3>Version Control</h3><p>Git & GitHub for collaboration</p></div>
+      <div class="skill-box"><span class="icon">🗄️</span><h3>SQL</h3><p>Advanced querying & database management</p></div>
+    </div>
+  </div>
+</section>
 
-          <!-- placeholder for future projects -->
-          <article class="card muted">
-            <h3>Project coming soon</h3>
-            <p>More projects will be added — ML predictions, dashboards, and real-world datasets.</p>
-            <p class="meta">Planned: Streamlit dashboard, AQI prediction model</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section bg-soft">
-      <div class="container narrow">
-        <h2 class="section-title">About Me</h2>
-        <div class="two-col">
-          <div>
-            <p>Hi — I’m <strong>Abhinav Verma</strong>. I graduated in 2021 (B.Tech, CSE) and have since focused on building practical data skills. I know Python, SQL and data visualization tools and I’m creating real projects to demonstrate my abilities to recruiters.</p>
-            <p>I enjoy cleaning messy datasets, exploring patterns, and presenting results with clear story-driven visuals. I am actively applying for Data Analyst roles and improving my portfolio daily.</p>
-          </div>
-          <div>
-            <ul class="skills-list">
-              <li>Python (pandas, numpy)</li>
-              <li>Data cleaning & EDA</li>
-              <li>Visualization (matplotlib, seaborn)</li>
-              <li>SQL & Jupyter</li>
-              <li>Git & GitHub</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container narrow">
-        <h2 class="section-title">Contact</h2>
-        <p class="lead">Want to hire or collaborate? Contact me and I’ll respond quickly.</p>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h4>Contact Info</h4>
-            <p><strong>Email:</strong> <a href="mailto:abhinavverma@gmail.com">abhinavverma@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/abhinav0077" target="_blank">github.com/abhinav0077</a></p>
-            <p><strong>LinkedIn:</strong> <em>(add later)</em></p>
-          </div>
-
-          <div class="contact-card">
-            <h4>Send a message</h4>
-            <!-- FormSubmit link placeholder: replace your-email-here -->
-            <form action="https://formsubmit.co/your-email-here" method="POST">
-              <input type="hidden" name="_captcha" value="false">
-              <label class="sr-only">Name</label>
-              <input name="name" type="text" placeholder="Your name" required>
-              <label class="sr-only">Email</label>
-              <input name="email" type="email" placeholder="Your email" required>
-              <label class="sr-only">Message</label>
-              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-              <button class="btn" type="submit">Send message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>© 2025 Abhinav Verma</div>
-        <div class="socials">
-          <a href="https://github.com/abhinav0077" target="_blank" aria-label="GitHub">GitHub</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Global Air Quality Analysis</h3>
+        <p>Hourly air-quality dataset (50 cities). Data cleaning, EDA, PM2.5 & AQI trends, correlation heatmap, and visual insights.</p>
+        <div class="card-actions">
+          <a class="btn" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div class="contact-card">
+      <h3 class="contact-heading">Contact Info</h3>
+      <div class="contact-content">
+        <p><strong>Email:</strong> <a href="mailto:abhinavverma@gmail.com">abhinavverma@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919792436319">+91-9792436319</a></p>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3 class="contact-heading">Send a Message</h3>
+      <form action="https://formsubmit.co/your-email-here" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div>© 2025 Abhinav Verma</div>
+  <div class="crafted">Crafted in India with ❤️</div>
+  <div class="socials"><a href="https://github.com/abhinav0077" target="_blank">GitHub</a></div>
+</footer>
 </body>
 </html>
