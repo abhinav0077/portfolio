@@ -80,9 +80,26 @@ body {
   padding: 160px 20px 100px;
   text-align: center;
 }
+
+/* Hero box: boxy, minimal padding, subtle border */
+.hero-box {
+  margin: 0 auto;                    /* center horizontally */
+  padding: 15px 20px;                /* minimal padding */
+  border: 1px solid rgba(83,98,158,0.5); /* subtle border matching palette */
+  border-radius: var(--radius);
+  text-align: center;
+  max-width: 800px;                  /* optional max width to maintain neat layout */
+  background: rgba(15,17,27,0.7);    /* semi-transparent background */
+  box-shadow: none;                  /* no neon glow */
+  animation: none;                   /* no glow animation */
+}
+
 .hero-title {
   font-size: 3.6rem;
   margin: 0;
+}
+.hero-iam {
+  font-size: 90%;
 }
 .name-highlight {
   font-weight: 900;
@@ -122,8 +139,9 @@ body {
   max-width: var(--container);
   margin: 0 auto;
   text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 2px solid rgba(83, 98, 158, 0.6); /* visible accent line */
 }
+
 .section h2 {
   font-size: 2.6rem;
   margin-bottom: 40px;
@@ -139,6 +157,9 @@ body {
 .about-text {
   flex: 3;
 }
+.about-text-adjust {
+  margin-top: -10px;
+}
 .about-text p {
   font-size: 1.05rem;
   max-width: 600px;
@@ -147,11 +168,12 @@ body {
 .about-skills {
   flex: 1;
   padding-left: 20px;
-  border-left: 2px solid var(--text);
+  border-left: 2px solid var(--accent); /* accent color */
 }
 .skills-list {
   list-style: none;
   padding: 0;
+  font-size: 1.1rem;
 }
 .skills-list li {
   margin-bottom: 10px;
@@ -189,6 +211,7 @@ body {
   z-index: 1;
   text-align: center;
   padding: 10px;
+  transition: 0.3s;
 }
 .process-box .icon {
   font-size: 2.2rem;
@@ -228,6 +251,10 @@ body {
   padding: 8px;
   border-radius: 6px;
 }
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px var(--accent);
+}
 
 /* Cards / Projects */
 .cards {
@@ -248,10 +275,18 @@ body {
   transform: scale(1.05);
   border-color: #ffffff;
 }
-.card-actions .btn {
+.card-actions .btn-project {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  transition: 0.3s;
+}
+.card-actions .btn-project:hover {
+  background: #3f4a8c;
 }
 
 /* Contact */
@@ -270,11 +305,20 @@ body {
   background: var(--card-bg);
   text-align: center;
 }
+.contact-card-small {
+  transform: scale(0.8);
+}
 .contact-heading {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
-.contact-card input, .contact-card textarea {
+.contact-card .contact-content p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+.contact-card input, 
+.contact-card textarea, 
+.contact-card button {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -282,15 +326,10 @@ body {
   border: 1px solid #888;
   background: #1b1c2a;
   color: #fff;
+  font-size: 1rem;
 }
 .contact-card button {
-  padding: 12px 18px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
 }
 .contact-card button:hover {
   background: #3f4a8c;
@@ -309,10 +348,14 @@ body {
 .site-footer .crafted {
   font-family: 'Pacifico', cursive;
   font-size: 1.15rem;
-  color: #fff;
+  color: #53629E;
 }
-.site-footer .socials {
-  order: 2;
+.site-footer .socials a {
+  color: #53629E; /* GitHub link visible */
+  text-decoration: none;
+}
+.site-footer .socials a:hover {
+  color: #3f4a8c;
 }
 
 /* Responsive */
