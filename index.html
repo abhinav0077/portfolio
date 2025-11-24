@@ -1,50 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Verma | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhinav Verma — Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home" class="logo">Abhinav <span class="muted">Verma</span></a>
+        <div class="tag">Data Analyst</div>
+      </div>
 
-<header>
-    <nav>
-        <h2 class="logo">Abhinav</h2>
-        <div class="menu-toggle" id="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+      <button id="nav-toggle" class="nav-toggle" aria-label="toggle nav">
+        <span></span><span></span><span></span>
+      </button>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Data Analyst Portfolio</h1>
-        <p>I specialize in turning raw data into actionable insights using Python, SQL, Pandas, NumPy, Matplotlib, Seaborn & Excel.</p>
-        <a href="projects.html" class="btn">View My Work</a>
+      <nav class="site-nav" id="site-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a class="cta" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">View Project</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer>
-    <p>© 2025 Abhinav Verma</p>
-</footer>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Data Analyst — I turn messy data into clear insights</h1>
+          <p class="lead">
+          <p class="lead">
+          I’m continuously learning and building new projects to grow as a data professional, and I’m actively seeking opportunities where I can apply my analytical mindset, strong problem-solving ability, and passion for data to create real impact.
+          </p>
 
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+          </p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-outline" href="https://github.com/abhinav0077" target="_blank">My GitHub</a>
+          </div>
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        menuToggle.classList.toggle('open');
-    });
-</script>
+          <ul class="quick-stats">
+            <li><strong>1</strong><span>Key project</span></li>
+            <li><strong>50+</strong><span>Cities analyzed</span></li>
+            <li><strong>Python</strong><span>pandas • seaborn • matplotlib</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="card preview-card">
+            <div class="card-title">Project preview — Global Air Quality</div>
+            <img src="https://via.placeholder.com/720x420?text=AQI+Heatmap" alt="preview" class="preview-img" />
+            <div class="card-body">
+              <p>End-to-end analysis: cleaning, EDA, time-series, correlations and visual storytelling. See full repo for code & notebook.</p>
+              <a class="btn small" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">Open repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Some of my Selected works that demonstrates practical data analysis skills.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Global Air Quality Analysis</h3>
+            <p>Hourly air-quality dataset (50 cities). Data cleaning, EDA, PM2.5 & AQI trends, correlation heatmap, and visual insights.</p>
+            <p class="meta">Python • Pandas • Seaborn • Matplotlib • Jupyter • Git</p>
+            <div class="card-actions">
+              <a class="btn small" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">View on GitHub</a>
+              <a class="btn small btn-outline" href="#contact">Discuss</a>
+            </div>
+          </article>
+
+          <!-- placeholder for future projects -->
+          <article class="card muted">
+            <h3>Project coming soon</h3>
+            <p>More projects will be added — ML predictions, dashboards, and real-world datasets.</p>
+            <p class="meta">Planned: Streamlit dashboard, AQI prediction model</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section bg-soft">
+      <div class="container narrow">
+        <h2 class="section-title">About Me</h2>
+        <div class="two-col">
+          <div>
+            <p>Hi — I’m <strong>Abhinav Verma</strong>. I graduated in 2021 (B.Tech, CSE) and have since focused on building practical data skills. I know Python, SQL and data visualization tools and I’m creating real projects to demonstrate my abilities to recruiters.</p>
+            <p>I enjoy cleaning messy datasets, exploring patterns, and presenting results with clear story-driven visuals. I am actively applying for Data Analyst roles and improving my portfolio daily.</p>
+          </div>
+          <div>
+            <ul class="skills-list">
+              <li>Python (pandas, numpy)</li>
+              <li>Data cleaning & EDA</li>
+              <li>Visualization (matplotlib, seaborn)</li>
+              <li>SQL & Jupyter</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">Contact</h2>
+        <p class="lead">Want to hire or collaborate? Contact me and I’ll respond quickly.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h4>Contact Info</h4>
+            <p><strong>Email:</strong> <a href="mailto:abhinavverma@gmail.com">abhinavverma@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/abhinav0077" target="_blank">github.com/abhinav0077</a></p>
+            <p><strong>LinkedIn:</strong> <em>(add later)</em></p>
+          </div>
+
+          <div class="contact-card">
+            <h4>Send a message</h4>
+            <!-- FormSubmit link placeholder: replace your-email-here -->
+            <form action="https://formsubmit.co/your-email-here" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <label class="sr-only">Name</label>
+              <input name="name" type="text" placeholder="Your name" required>
+              <label class="sr-only">Email</label>
+              <input name="email" type="email" placeholder="Your email" required>
+              <label class="sr-only">Message</label>
+              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+              <button class="btn" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© 2025 Abhinav Verma</div>
+        <div class="socials">
+          <a href="https://github.com/abhinav0077" target="_blank" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
