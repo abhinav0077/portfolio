@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 — Lost &amp; Found</title>
+
+<style>
+:root{--bg:#f4f6f8;--card-bg:rgba(13,17,20,0.15);--card-border:rgba(13,17,20,0.08);--text-main:#22232a;--text-soft:#62636b;--accent:#4A6CF7;--teal:#2EC4B6;--amber:#F7B267}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,-apple-system,Roboto,Helvetica Neue,Arial;background:var(--bg);color:var(--text-main);overflow:hidden}
+.wrapper{width:100%;height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card{width:100%;height:100vh;background:var(--card-bg);border:1px solid var(--card-border);backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(16,20,24,0.06);position:relative;overflow:hidden;z-index:2;display:flex;align-items:center;justify-content:center;padding:56px}
+@media(max-width:768px){.card{padding:32px}}
+@media(max-width:480px){.card{padding:20px}}
+.shape{position:absolute;border-radius:50%;opacity:0.36;filter:blur(40px);pointer-events:none}
+.shape.a{width:360px;height:360px;background:var(--accent);top:-180px;left:-180px}
+.shape.b{width:300px;height:300px;background:var(--teal);bottom:-150px;right:-150px}
+.shape.c{width:220px;height:220px;background:var(--amber);top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.3}
+.container{display:flex;flex-direction:column;align-items:center;gap:18px;position:relative;z-index:3}
+.big-404{font-size:7.8rem;font-weight:900;color:#8b8b8b;margin:0;line-height:0.9;opacity:0.8}
+.title-wrapper{width:100%;display:flex;flex-direction:column;align-items:center;margin-top:6px;position:relative}
+.title{font-size:2.4rem;font-weight:800;margin:0;color:var(--text-main);z-index:3}
+.subtitle{font-size:1.05rem;color:var(--text-soft);margin:8px 0 0}
+.content-dip{padding:20px 12px;margin-top:20px;position:relative;overflow:hidden;max-width:600px}
+.desc{text-align:center;color:var(--text-soft);line-height:1.7;margin:12px 0 0;font-size:1rem}
+.btn-row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;justify-content:center}
+.btn{padding:12px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:1px solid rgba(0,0,0,0.06);background:#fff;color:var(--text-main);transition:transform 0.18s ease;font-size:0.95rem;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 30px rgba(74,108,247,0.14)}
+.btn:hover{transform:translateY(-3px)}
+.meta{font-size:0.92rem;color:var(--text-soft);margin-top:26px;text-align:center}
+.meta a{color:var(--accent);text-decoration:none}
+.wave-container{position:absolute;left:0;bottom:0;width:100%;height:600px;z-index:1;overflow:hidden}
+.wave-container svg{width:100%;height:100%;display:block}
+</style>
+</head>
+
+<body>
+<div class="shape a"></div>
+<div class="shape b"></div>
+<div class="shape c"></div>
+
+<div class="wrapper">
+  <div class="card" role="main" aria-labelledby="title-404">
+    <div class="wave-container">
+      <svg viewBox="0 0 1440 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,600 C200,250 420,600 720,320 C1020,90 1240,320 1440,250 L1440,600 L0,600 Z" fill="rgba(13,17,20,0.12)"/>
+        <path d="M0,600 C220,280 440,600 720,340 C1000,110 1240,340 1440,270 L1440,600 L0,600 Z" fill="rgba(13,17,20,0.08)"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="big-404">404</div>
+      <div class="title-wrapper">
+        <h1 id="title-404" class="title">You Drifted Off the Path</h1>
+      </div>
+      <div class="content-dip">
+        <p class="subtitle">But every detour is part of the journey.</p>
+        <p class="desc">The page you're looking for doesn't exist — consider this a chance to explore new routes. Your workspace is still here; use the links below to navigate back.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="index.html">🏠 Go Back Home</a>
+          <a class="btn" href="#projects">🔎 Explore Projects</a>
+          <a class="btn" href="Abhinav_Verma_Data_Analyst_CV.pdf" target="_blank">📄 Resume</a>
+        </div>
+        <p class="meta">Error Code: 404 · Missing Resource · Contact: <a href="mailto:abhinavvermalmp007@gmail.com">abhinavvermalmp007@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

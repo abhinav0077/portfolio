@@ -1,0 +1,932 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav Verma — Aspiring Data Analyst,Data Insights & Analytics Portfolio</title>
+  <meta name="description" content="Abhinav Verma, aspiring data analyst learning for data scientist, specializing in Python, SQL, Tableau, and Power BI. Explore my portfolio of data-driven projects, including air quality analysis and interactive dashboards.">
+  <meta name="keywords" content="data analyst, Python, SQL, Tableau, Power BI, data visualization, machine learning, portfolio, Abhinav Verma">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=14">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="script.js?v=6&t=20250312001"></script>
+</head>
+<body>
+
+<!--
+  Page structure and quick notes:
+  - Header: contains the hamburger toggle and mobile drawer used on small screens.
+  - Main sections (order): Home/Hero, About, Process, Skills, Projects, Contact, Footer.
+  - Scripts reference IDs and classes directly (e.g. `hamburgerToggle`, `mobileNav`,
+    `projects-showcase`, `indicator`, `contactForm`, `scrollToTop`). Avoid renaming
+    those identifiers unless the script is updated accordingly.
+  - Visual edits belong in `style.css`; behavior lives in `script.js`.
+-->
+
+<header class="hamburger-header">
+  <div class="header-content">
+    <button class="hamburger-toggle" id="hamburgerToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Theme toggle: switches site between light and dark color schemes -->
+    <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle color theme" title="Toggle color theme">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb" aria-hidden="true"></span>
+      </span>
+    </button>
+  </div>
+  
+  <!-- Mobile drawer: navigation links and quick social links for small screens -->
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <div class="logo-brand">
+        <button class="logo-btn" id="logoBtn" title="Reload page"><span class="logo-text">卂ᐯ</span></button>
+      </div>
+    </div>
+    <a href="#home" class="mobile-nav-link">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#about" class="mobile-nav-link">
+      <i class="fas fa-user"></i>
+      <span>About</span>
+    </a>
+    <a href="#skills" class="mobile-nav-link">
+      <i class="fas fa-code"></i>
+      <span>Skills</span>
+    </a>
+    <a href="#projects" class="mobile-nav-link">
+      <i class="fas fa-folder"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#contact" class="mobile-nav-link">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+    <a href="Abhinav_Verma_Data_Analyst_CV.pdf" class="mobile-nav-link resume-link" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-file-pdf"></i>
+      <span>View Resume</span>
+    </a>
+    
+    <!-- Mobile social buttons (GitHub, LinkedIn) -->
+    <div class="mobile-social-circles" aria-hidden="false">
+      <a class="mobile-social-circle git" href="https://github.com/abhinav0077" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="mobile-social-circle linkedin" href="https://www.linkedin.com/in/abhinavverma0077" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div class="main-layout">
+  <div class="left-panel">
+  </div>
+
+  <div class="right-panel">
+    <!-- Hero: main landing area and primary call-to-action -->
+    <section id="home" class="hero">
+      <div class="hero-box">
+        <div class="hero-content">
+          <div class="hero-center">
+            <div class="hero-text">
+              <h1 class="hero-title"><span class="hero-iam">Hi there,</span><br><span class="hero-iam">I am <span class="my-name">Abhinav Verma</span></span></h1>
+              <h2 class="hero-subtitle">Aspiring <span class="emph-darker">Data Analyst</span> — Transforming raw data into actionable business intelligence</h2>
+              <p class="lead">Passionate about leveraging Python, SQL, and advanced analytics to deliver data-driven insights. Continuously building innovative projects to enhance my expertise in data visualization and machine learning solutions.</p>
+              <div class="hero-ctas">
+                <div class="top-buttons">
+                  <a class="btn playbtn" href="#projects"><div><span>Explore My Work</span></div></a>
+                  <a class="btn playbtn" href="https://github.com/abhinav0077" target="_blank"><div><span>My GitHub</span></div></a>
+                </div>
+                <a class="btn down-arrow-btn" href="#about"><i class="fas fa-angle-double-down"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About: profile summary, skills overview, education and certifications -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Profile Summary</h2>
+
+        <div class="about-intro">
+          <div class="intro-content">
+            <div class="intro-text">
+              <h3>Passionate Data Analyst</h3>
+              <p>I am a dedicated data analyst with a strong passion for transforming raw data into meaningful business insights. My journey in data analytics began with a curiosity about how data can drive better decision-making and improve business outcomes.</p>
+              <p>I specialize in end-to-end analytics processes, from data collection and cleaning to advanced visualization and predictive modeling. My expertise spans across Python, SQL, Power BI, and Tableau, allowing me to tackle complex data challenges with confidence.</p>
+            </div>
+            <div class="intro-stats">
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Years Learning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-services">
+          <h3>What I Do</h3>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h4>Data Visualization</h4>
+              <p>Creating compelling dashboards and reports that make complex data easy to understand and actionable.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>Data Analysis</h4>
+              <p>Performing in-depth analysis to uncover patterns, trends, and insights that drive business decisions.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Programming</h4>
+              <p>Writing efficient code in Python and SQL to automate processes and build scalable solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process: step-by-step description of the analysis workflow -->
+    <section id="process" class="section">
+      <div class="container">
+        <h2>My Analysis Process</h2>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-icon">🔍</div>
+            <h3>Define Problem</h3>
+            <p>Understand business objectives and formulate clear questions.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">📊</div>
+            <h3>Data Collection</h3>
+            <p>Gather relevant data from various sources.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">🧹</div>
+            <h3>Data Cleaning</h3>
+            <p>Handle missing values, outliers, and data inconsistencies.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">📈</div>
+            <h3>Exploratory Analysis</h3>
+            <p>Analyze patterns, trends, and relationships in the data.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">🤖</div>
+            <h3>Modeling</h3>
+            <p>Apply statistical methods and machine learning techniques.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">📋</div>
+            <h3>Visualization</h3>
+            <p>Create compelling dashboards and reports.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-icon">🎯</div>
+            <h3>Insights & Action</h3>
+            <p>Deliver actionable recommendations to stakeholders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Path: zigzag timeline (full text restored) -->
+    <section id="learning-path">
+      <div class="container">
+        <div class="learning-header">
+          <h2>Learning Path</h2>
+          <p class="learning-intro">My journey from graduation to becoming a data analyst (2021 — till date)</p>
+        </div>
+
+        <div class="zigzag-timeline">
+          <!-- 2021: Left side -->
+          <div class="timeline-item left">
+            <div class="timeline-card accent-blue">
+              <div class="card-header">
+                <div class="meta-box">
+                  <div class="meta-row">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="meta-text">
+                      <div class="card-year">2021</div>
+                      <h3 class="card-title">Graduation</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">Where it started</div>
+                <p class="card-desc">Completed B.Tech in CS & Engineering. Final year projects sparked curiosity about data-driven insights.</p>
+                <div class="card-subheading">Key moments</div>
+                <div class="card-grid">
+                  <div class="grid-item"><strong>Stats & Probability</strong><p>Introduced to fundamental statistical concepts.</p></div>
+                  <div class="grid-item"><strong>Capstone Project</strong><p>Built first data collection & analysis project.</p></div>
+                  <div class="grid-item"><strong>Data Interest</strong><p>Realized preference for data over theory.</p></div>
+                  <div class="grid-item"><strong>Foundation Set</strong><p>Decided to pursue data analytics path.</p></div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-badges">
+                    <span class="badge">Statistics</span>
+                    <span class="badge">Capstone</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <!-- Standardized timeline items (2022 — 2025) matching 2021 structure -->
+
+          <!-- 2022–2023: Right side -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-card accent-green">
+              <div class="card-header">
+                <div class="meta-box">
+                  <div class="meta-row">
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <div class="meta-text">
+                      <div class="card-year">2022–2023</div>
+                      <h3 class="card-title">Foundation</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">Building the basics</div>
+                <p class="card-desc">Self-paced learning to build foundation in data. Focused on practical skills, projects, and community participation.</p>
+                <div class="card-subheading">Learning activities</div>
+                <div class="card-grid">
+                  <div class="grid-item"><strong>Python Basics</strong><p>Learned core libraries (Pandas, NumPy) for data work.</p></div>
+                  <div class="grid-item"><strong>Excel Mastery</strong><p>Advanced data cleaning and basic analysis.</p></div>
+                  <div class="grid-item"><strong>SQL Basics</strong><p>SELECT, filtering, grouping & aggregation.</p></div>
+                  <div class="grid-item"><strong>Learning Log</strong><p>Kept notebooks & portfolio of small projects.</p></div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-badges">
+                    <span class="badge">Python</span>
+                    <span class="badge">Excel</span>
+                    <span class="badge">SQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2023–2024: Left side -->
+          <div class="timeline-item left">
+            <div class="timeline-card accent-purple">
+              <div class="card-header">
+                <div class="meta-box">
+                  <div class="meta-row">
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="meta-text">
+                      <div class="card-year">2023–2024</div>
+                      <h3 class="card-title">Core Data Skills</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">Focused, practical upskilling and hands-on projects.</div>
+                <p class="card-desc">Built reliable workflows for cleaning, analysing and visualising data.</p>
+                <div class="card-subheading">Key work</div>
+                <div class="card-grid">
+                  <div class="grid-item"><strong>Pandas & NumPy</strong><p>Data manipulation and arrays.</p></div>
+                  <div class="grid-item"><strong>EDA & Visualization</strong><p>Seaborn, Matplotlib, Plotly.</p></div>
+                  <div class="grid-item"><strong>SQL Fundamentals</strong><p>Queries, joins, basic aggregation.</p></div>
+                  <div class="grid-item"><strong>Kaggle Projects</strong><p>Competitions, notebooks, dataset cleaning & publishing.</p></div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-badges">
+                    <span class="badge">Pandas</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Kaggle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <!-- 2024–2025: Right side (Active) -->
+          <div class="timeline-item right active">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-card accent-blue">
+              <div class="card-header">
+                <div class="meta-box">
+                  <div class="meta-row">
+                    <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="meta-text">
+                      <div class="card-year">2024–2025</div>
+                      <h3 class="card-title">Advanced & Portfolio</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">Preparing job-ready projects and polishing delivery.</div>
+                <p class="card-desc">Focused on end-to-end projects, reproducibility and business storytelling.</p>
+                <div class="card-subheading">Highlights</div>
+                <div class="card-grid">
+                  <div class="grid-item"><strong>Advanced SQL</strong><p>CTEs, window functions, performance tuning.</p></div>
+                  <div class="grid-item"><strong>Power BI & Dashboards</strong><p>Interactive reports and storytelling.</p></div>
+                  <div class="grid-item"><strong>Reproducible Projects</strong><p>Documentation, notebooks & GitHub.</p></div>
+                  <div class="grid-item"><strong>Insight-driven Analysis</strong><p>Business-focused recommendations.</p></div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-badges">
+                    <span class="badge">Power BI</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outcome: show key learning outcomes directly after the timeline (now above Active Projects) -->
+        <section id="outcome" class="section outcome-section">
+          <div class="container">
+            <div class="outcome-card outcome-redesign" aria-labelledby="outcome-heading">
+              <div class="outcome-grid">
+                <div class="outcome-left">
+                  <div class="outcome-header">
+                    <div class="outcome-icon">🎯</div>
+                    <div>
+                      <h3 id="outcome-heading">Outcome</h3>
+                      <div class="outcome-sub">--Current capabilities and progress--</div>
+                    </div>
+                  </div>
+
+                  <p class="outcome-lead">I build end-to-end data workflows — collecting, cleaning, analysing, and visualising data to produce actionable insights and stakeholder-ready dashboards.</p>
+
+                  <div class="outcome-metrics">
+                    <div class="metric">
+                      <div class="metric-number">5+</div>
+                      <div class="metric-label">Projects</div>
+                    </div>
+                    <div class="metric">
+                      <div class="metric-number">10+</div>
+                      <div class="metric-label">Notebooks</div>
+                    </div>
+                    <div class="metric">
+                      <div class="metric-number">5+</div>
+                      <div class="metric-label">Dashboards</div>
+                    </div>
+                  </div>
+
+                  <div class="outcome-ctas">
+                    <a class="btn primary" href="#projects"><i class="fas fa-folder-open" aria-hidden="true"></i> View Projects</a>
+                    <a class="btn ghost" href="Abhinav_Verma_Data_Analyst_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> View Resume</a>
+                  </div>
+                </div>
+
+                <aside class="outcome-right" aria-hidden="false">
+                  <h4 class="outcome-right-heading">Skills & Practices</h4>
+                  <div class="outcome-badges">
+                    <span class="badge">Python</span>
+                    <span class="badge">Pandas</span>
+                    <span class="badge">NumPy</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Power BI</span>
+                    <span class="badge">Data Viz</span>
+                    <span class="badge">GitHub</span>
+                    <span class="badge">Reproducible Projects</span>
+                  </div>
+
+                  <ul class="outcome-right-list">
+                    <li>End-to-end workflows: collection → cleaning → analysis → visualization</li>
+                    <li>Tools: Python (Pandas/NumPy), SQL, Excel, Power BI</li>
+                    <li>Practices: reproducibility, documented notebooks, stakeholder storytelling</li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio Focus (2025) — placed inside the same section so it appears below the Outcome -->
+        <aside class="focus-card focus-prominent" aria-labelledby="portfolio-focus-heading">
+          <div class="focus-grid">
+            <div class="focus-header">
+              <h3 id="portfolio-focus-heading" class="focus-heading">My Active works</h3>
+            </div>
+
+            <div class="focus-items">
+              <article class="focus-item">
+                <div class="focus-icon">📊</div>
+                <div class="focus-body">
+                  <h4>Real-world Kaggle dataset analyses</h4>
+                  <p>I clean, explore, and publish insights from public datasets.</p>
+                </div>
+              </article>
+
+              <article class="focus-item">
+                <div class="focus-icon">🧠</div>
+                <div class="focus-body">
+                  <h4>Problem statements with insights</h4>
+                  <p>I define clear business problems and deliver concise, actionable findings.</p>
+                </div>
+              </article>
+
+              <article class="focus-item">
+                <div class="focus-icon">📁</div>
+                <div class="focus-body">
+                  <h4>Clean GitHub repositories</h4>
+                  <p>I maintain clean GitHub repositories with organized code, documented notebooks, and reproducible project structure.</p>
+                </div>
+              </article>
+
+              <article class="focus-item">
+                <div class="focus-icon">📈</div>
+                <div class="focus-body">
+                  <h4>Dashboards & spreadsheets</h4>
+                  <p>I build interactive dashboards and polished spreadsheets for stakeholders.</p>
+                </div>
+              </article>
+
+              <article class="focus-item">
+                <div class="focus-icon">🌐</div>
+                <div class="focus-body">
+                  <h4>Portfolio website</h4>
+                  <p>I present projects, process, and impact with clear narratives and visuals.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills: technical skills matrix and proficiency indicators -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-categories">
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Programming Languages</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Python</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Data Processing Tools</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Pandas</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">NumPy</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Data Visualization Libraries</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Matplotlib</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar" style="background: #e5e7eb;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Seaborn</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar" style="background: #e5e7eb;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Plotly</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar" style="background: #e5e7eb;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Analytical Development Environments</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Jupyter Notebook</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">VS Code</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Database Technologies & Querying Tools</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">SQL</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar" style="background: #e5e7eb;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">MySQL</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">MySQL Workbench</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Business Intelligence & Dashboarding Tools</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Power BI</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Tableau</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Spreadsheet Tools</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Excel (Pivot Tables, Lookups, Power Query)</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Google Sheets</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar" style="background: #e5e7eb;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category-matrix">
+              <h4 class="category-name">Version Control & Collaboration Tools</h4>
+              <div class="skill-items-matrix">
+                <div class="skill-item-matrix">
+                  <span class="skill-label">Git</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+                <div class="skill-item-matrix">
+                  <span class="skill-label">GitHub</span>
+                  <div class="proficiency-dots">
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FF6B4A, #FF8A65) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #4FACFE, #00D4FF) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #2BB3A4, #26D0CE) !important;"></span>
+                    <span class="bar filled" style="background: linear-gradient(90deg, #FFC107, #FFD54F) !important;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects: project carousel and indicators. Carousel expects `.projects-showcase` and `.indicator` elements. -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header-wrapper">
+          <h2>Projects</h2>
+        </div>
+        <div class="carousel-wrapper">
+          <button class="carousel-nav-btn carousel-prev" aria-label="Previous project">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="projects-showcase">
+            <div class="project-showcase-card">
+              <div class="project-showcase-content">
+                <div class="project-number">01</div>
+                <h3 class="project-title">Global Air Quality Analysis</h3>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Analysis</span>
+                  <span class="tag">Visualization</span>
+                </div>
+                <p class="project-description">Analyzed hourly air quality data from 50 cities to identify pollution patterns. Performed comprehensive data cleaning, exploratory statistical analysis, and created interactive visualizations to reveal temporal relationships between pollutants and environmental factors.</p>
+                <div class="project-stats">
+                  <div class="stat"><span class="stat-value">50+</span><span class="stat-label">Cities</span></div>
+                  <div class="stat"><span class="stat-value">100K+</span><span class="stat-label">Data Points</span></div>
+                  <div class="stat"><span class="stat-value">6</span><span class="stat-label">Pollutants</span></div>
+                </div>
+                <a class="project-cta" href="https://github.com/abhinav0077/global-air-quality-analysis" target="_blank">
+                  <span>View Project on GitHub</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="project-showcase-visual">
+                <div class="chart-container">
+                  <div class="chart-item">
+                    <svg class="mini-chart" viewBox="0 0 100 80">
+                      <rect x="5" y="60" width="8" height="15" fill="#FF6B4A"/>
+                      <rect x="18" y="45" width="8" height="30" fill="#4FACFE"/>
+                      <rect x="31" y="35" width="8" height="40" fill="#2BB3A4"/>
+                      <rect x="44" y="25" width="8" height="50" fill="#FFC107"/>
+                      <rect x="57" y="40" width="8" height="35" fill="#FF6B4A"/>
+                      <rect x="70" y="30" width="8" height="45" fill="#4FACFE"/>
+                      <rect x="83" y="50" width="8" height="25" fill="#2BB3A4"/>
+                    </svg>
+                  </div>
+                  <div class="chart-item">
+                    <svg class="mini-chart" viewBox="0 0 100 80">
+                      <circle cx="50" cy="40" r="30" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-dasharray="188.4 94.2"/>
+                      <circle cx="50" cy="40" r="20" fill="none" stroke="#4FACFE" stroke-width="2" stroke-dasharray="125.6 62.8"/>
+                      <circle cx="50" cy="40" r="10" fill="#2BB3A4"/>
+                    </svg>
+                  </div>
+                  <div class="chart-item">
+                    <svg class="mini-chart" viewBox="0 0 100 80">
+                      <polyline points="5,60 20,35 35,45 50,20 65,40 80,25 95,50" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="5" cy="60" r="2" fill="#4FACFE"/>
+                      <circle cx="20" cy="35" r="2" fill="#2BB3A4"/>
+                      <circle cx="35" cy="45" r="2" fill="#FFC107"/>
+                      <circle cx="50" cy="20" r="2" fill="#FF6B4A"/>
+                      <circle cx="65" cy="40" r="2" fill="#4FACFE"/>
+                      <circle cx="80" cy="25" r="2" fill="#2BB3A4"/>
+                      <circle cx="95" cy="50" r="2" fill="#FFC107"/>
+                    </svg>
+                  </div>
+                  <div class="chart-item">
+                    <svg class="mini-chart" viewBox="0 0 100 80">
+                      <rect x="10" y="50" width="12" height="25" fill="#FF6B4A"/>
+                      <rect x="28" y="35" width="12" height="40" fill="#4FACFE"/>
+                      <rect x="46" y="45" width="12" height="30" fill="#2BB3A4"/>
+                      <rect x="64" y="20" width="12" height="55" fill="#FFC107"/>
+                      <rect x="82" y="40" width="12" height="35" fill="#FF6B4A"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 2 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 3 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 4 Coming Soon</div>
+              </div>
+            </div>
+            
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 5 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 6 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 7 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 8 Coming Soon</div>
+              </div>
+            </div>
+
+            <div class="project-showcase-card dummy-placeholder">
+              <div class="project-showcase-content">
+                <div class="dummy-text">Project 9 Coming Soon</div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-nav-btn carousel-next" aria-label="Next project">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel-indicators">
+          <button class="indicator active" data-index="0" aria-label="Project 1"></button>
+          <button class="indicator" data-index="1" aria-label="Project 2"></button>
+          <button class="indicator" data-index="2" aria-label="Project 3"></button>
+          <button class="indicator" data-index="3" aria-label="Project 4"></button>
+          <button class="indicator" data-index="4" aria-label="Project 5"></button>
+          <button class="indicator" data-index="5" aria-label="Project 6"></button>
+          <button class="indicator" data-index="6" aria-label="Project 7"></button>
+          <button class="indicator" data-index="7" aria-label="Project 8"></button>
+          <button class="indicator" data-index="8" aria-label="Project 9"></button>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contact: contact details and message form. Form ID `contactForm` is used by scripts. -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info-section">
+            <div class="contact-info-card">
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong><br>
+                    <a href="mailto:abhinavvermalmp007@gmail.com">abhinavvermalmp007@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <strong>Phone</strong><br>
+                    <a href="tel:+919792436319">+91-9792436319</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fab fa-linkedin-in"></i>
+                  <div>
+                    <strong>LinkedIn</strong><br>
+                      <a href="https://www.linkedin.com/in/abhinavverma0077" target="_blank">www.linkedin.com/in/abhinavverma0077</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fab fa-github"></i>
+                  <div>
+                    <strong>GitHub</strong><br>
+                    <a href="https://github.com/abhinav0077" target="_blank">github.com/abhinav0077</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <strong>Location</strong><br>
+                    Lucknow, India
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-section">
+            <div class="contact-form-card">
+              <form id="contactForm" action="https://formsubmit.co/abhinavvermalmp007@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="form-submit-wrapper">
+                  <button class="btn form-submit-btn" type="submit">Send Message</button>
+                  <div class="form-loading" id="formLoading" style="display:none;">
+                    <i class="fas fa-spinner fa-spin"></i>
+                  </div>
+                </div>
+                <div class="form-message form-success" id="formSuccess" style="display:none;">
+                  <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+                </div>
+                <div class="form-message form-error" id="formError" style="display:none;">
+                  <i class="fas fa-exclamation-circle"></i> Something went wrong. Please try again.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer: copyright, craft note, and page utilities (scroll-to-top) -->
+    <footer class="site-footer">
+      <div class="footer-left">&nbsp;&nbsp;&nbsp;© 2025 Abhinav Verma</div>
+      <div class="footer-center crafted">Crafted in India with <span class="heart-glow">❤️</span></div>
+      <div class="footer-right"></div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+</div>
+</body>
+</html>
+
